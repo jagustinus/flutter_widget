@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(FlutterWidget());
@@ -27,10 +26,10 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                 Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                        colors: [Colors.red[700], Colors.orange[200]],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        stops: [0.0, 1.0],
+                      colors: [Colors.red[700], Colors.orange[200]],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      stops: [0.0, 1.0],
                     ),
                   ),
                 ),
@@ -39,7 +38,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Flexible(
-                          flex: 2,
+                          flex: 3,
                           child: Container(
                             margin: const EdgeInsets.only(bottom: 8.0),
                             child: Image.network(
@@ -48,7 +47,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                                 width: double.maxFinite),
                           )),
                       Flexible(
-                          flex: 1,
+                          flex: 2,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -61,7 +60,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image1.jpg"),
-                                        fit: BoxFit.fitHeight),
+                                        fit: BoxFit.fitWidth),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -75,7 +74,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image2.jpg"),
-                                        fit: BoxFit.fitHeight),
+                                        fit: BoxFit.fitWidth),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -89,7 +88,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image3.jpg"),
-                                        fit: BoxFit.fitHeight),
+                                        fit: BoxFit.fitWidth),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -103,7 +102,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image4.jpg"),
-                                        fit: BoxFit.fitHeight),
+                                        fit: BoxFit.fitWidth),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -145,15 +144,18 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                       ),
                     ],
                   ),
-                )
-                ,
+                ),
                 Positioned(
                   top: 20,
                   right: 20,
                   child: Container(
                     child: FloatingActionButton(
                       backgroundColor: Colors.white,
-                      child: Icon(Icons.favorite, color: _isLoved == false? Colors.grey[500] : Colors.red,),
+                      child: Icon(
+                        Icons.favorite,
+                        color:
+                            _isLoved == false ? Colors.grey[500] : Colors.red,
+                      ),
                       onPressed: () {
                         setState(() {
                           _isLoved = _isLoved == true ? false : true;
