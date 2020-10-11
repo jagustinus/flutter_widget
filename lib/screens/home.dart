@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/components/book_button.dart';
+import 'booking.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -13,7 +14,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Mission 1"),
-          backgroundColor: Colors.red[700],
         ),
         body: Stack(
           fit: StackFit.loose,
@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.red[700], Colors.orange[200]],
+                  colors: [Colors.blueAccent, Colors.blue[200]],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   stops: [0.0, 1.0],
