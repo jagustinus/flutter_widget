@@ -48,6 +48,7 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                           )),
                       Flexible(
                           flex: 2,
+                          fit: FlexFit.loose,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,12 +56,13 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  height: 80,
                                   margin: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image1.jpg"),
-                                        fit: BoxFit.fitWidth),
+                                        fit: BoxFit.cover),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -69,12 +71,13 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  height: 80,
                                   margin: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image2.jpg"),
-                                        fit: BoxFit.fitWidth),
+                                        fit: BoxFit.cover),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -83,12 +86,13 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  height: 80,
                                   margin: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image3.jpg"),
-                                        fit: BoxFit.fitWidth),
+                                        fit: BoxFit.cover),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
@@ -97,12 +101,13 @@ class _FlutterWidgetState extends State<FlutterWidget> {
                               Flexible(
                                 flex: 1,
                                 child: Container(
+                                  height: 80,
                                   margin: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/image4.jpg"),
-                                        fit: BoxFit.fitWidth),
+                                        fit: BoxFit.cover),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12.0)),
                                   ),
